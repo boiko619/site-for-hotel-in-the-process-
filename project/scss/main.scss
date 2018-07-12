@@ -1,0 +1,116 @@
+$black:#000;
+li{
+    list-style: none;
+}
+body{
+    background: lighten($black,95%);
+}
+.nav{
+    height: 100px;
+    width: 100%;
+    background: #fff;
+}
+.head-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    li{
+        display: flex;
+        align-items: center;
+        list-style: none;
+      }
+    a{
+        text-decoration: none;
+        color: $black;
+    }
+}
+    .logo{
+    img{
+        height: 100px;
+        width: auto;
+        margin: 0 20px;
+    }   }
+.header{
+  /*  background-image: url("/images/header.jpg");
+    background-size: cover;
+    -moz-background-size: cover;  
+    background-position: center;
+    background: black;
+  */
+  position: relative;
+  img{
+      width: 100%;
+      height: auto;
+  }
+    
+}
+.check_foto{
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+.order_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "check_in check_out guests check_button";
+    grid-template-rows: 120px;
+    width: 100%;
+    padding: 0;    
+    margin: 0;
+
+
+    
+}
+.check_in{
+    grid-area: check_in;
+}
+.check_out{
+    grid-area: check_out;
+}
+.guests{
+    grid-area: guests;
+}
+.check_button{
+    grid-area: check_button;
+}
+
+.order{
+    margin: 0 16%;
+    display: flex;
+    justify-content: center;
+    top: -60px;
+    position: relative;
+    padding: 0;
+}
+.check_in, .check_out, .guests, .check_button{
+    border: $black solid 1px;
+    background: wheat;
+    padding: 0;
+    margin: 0;
+}
+.about_us{
+    display: grid;
+    grid-template-areas: "foto about_us_info";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0;
+    margin: 100px 20%;
+    
+}
+.foto{
+    width: 400px;
+    height: auto;
+    grid-area: foto;
+    overflow: hidden;
+    img{
+        width: 400px;
+        height: auto;
+    }
+}
+.about_us_info{
+   grid-area: about_us_info;
+   border-top: solid 1px black ;
+   
+}
